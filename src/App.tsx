@@ -6,13 +6,14 @@ import { getWeatherTheme } from "./utils/weatherTheme";
 function App() {
   const { weather, loading, error, fetchWeather } = useWeather();
 
-  const bgTheme = weather
-    ? getWeatherTheme(weather.weather[0].main).bg
-    : "from-sky-400 to-blue-600";
+  const bgImage = weather
+    ? getWeatherTheme(weather.weather[0].main).image
+    : "/backgrounds/default.jpg";
 
   return (
     <div
-      className={`min-h-screen bg-gradient-to-br ${bgTheme} flex flex-col items-center justify-center p-6 transition-all duration-700`}
+      className="min-h-screen flex flex-col items-center justify-center p-6 bg-cover bg-center bg-transition"
+      style={{ backgroundImage: `url(${bgImage})` }}
     >
       <h1 className="text-white text-4xl font-bold mb-8 drop-shadow">
         Weather App
