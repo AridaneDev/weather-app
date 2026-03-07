@@ -23,14 +23,14 @@ function App() {
   });
 
   return (
-    <div className="relative min-h-screen overflow-x-hidden">
+    <div className="relative h-screen overflow-hidden">
       <div
         className="fixed inset-0 bg-cover bg-center bg-transition -z-10"
         style={{ backgroundImage: `url(${bgImage})` }}
       />
       <div className="fixed inset-0 bg-black/50 -z-10" />
 
-      <div className="relative z-10 flex flex-col min-h-screen">
+      <div className="relative z-10 flex flex-col h-screen overflow-hidden">
         <header className="p-4 sm:p-6 flex items-center">
           <h1 className="text-white text-2xl font-bold drop-shadow tracking-wide">
             🌤️ Weather App
