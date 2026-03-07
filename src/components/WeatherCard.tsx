@@ -9,12 +9,12 @@ export function WeatherCard({ weather }: Props) {
   const theme = getWeatherTheme(weather.weather[0].main);
 
   return (
-    <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-3xl p-6 shadow-2xl flex flex-col items-center gap-5 min-w-[200px]">
-      <span className="text-6xl">{theme.icon}</span>
+    <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-3xl p-4 sm:p-6 shadow-2xl flex flex-col items-center gap-4 sm:gap-5 w-full sm:w-auto sm:min-w-[220px]">
+      <span className="text-4xl sm:text-6xl">{theme.icon}</span>
 
       <div className="flex flex-col items-center gap-1">
         <p className="text-white/60 text-sm">Sensación térmica</p>
-        <p className="text-white text-3xl font-bold">
+        <p className="text-white text-2xl sm:text-3xl font-bold">
           {Math.round(weather.main.feels_like)}°C
         </p>
       </div>

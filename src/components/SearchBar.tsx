@@ -13,7 +13,7 @@ export function SearchBar({ onSearch }: Props) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex gap-2 w-full max-w-md">
+    <form onSubmit={handleSubmit} className="flex gap-2 w-full max-w-md px-1">
       <input
         name="city"
         type="text"
