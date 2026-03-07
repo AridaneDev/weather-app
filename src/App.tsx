@@ -23,7 +23,7 @@ function App() {
   });
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen overflow-x-hidden">
       <div
         className="fixed inset-0 bg-cover bg-center bg-transition -z-10"
         style={{ backgroundImage: `url(${bgImage})` }}
