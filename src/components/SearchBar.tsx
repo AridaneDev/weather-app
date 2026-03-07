@@ -13,16 +13,16 @@ export function SearchBar({ onSearch }: Props) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex gap-2 w-full max-w-md px-1">
+    <form onSubmit={handleSubmit} className="flex gap-2 w-full max-w-md">
       <input
         name="city"
         type="text"
-        placeholder="Busca una ciudad..."
-        className="flex-1 px-4 py-2 rounded-xl text-gray-700 outline-none placeholder:text-gray-700 bg-white"
+        placeholder="Ciudad..."
+        className="flex-1 min-w-0 px-3 py-2 rounded-xl text-base text-gray-700 outline-none placeholder:text-gray-400 bg-white"
       />
       <button
         type="submit"
-        className="px-4 py-2 bg-white text-gray-800 rounded-xl font-semibold hover:bg-gray-100"
+        className="shrink-0 px-3 py-2 bg-white text-gray-800 rounded-xl font-semibold hover:bg-gray-100 whitespace-nowrap"
       >
         Buscar
       </button>
