@@ -14,4 +14,7 @@ export interface WeatherData {
   wind: {
     speed: number;
   };
+  rain?: {
+    "1h"?: number;
+  };
 }
